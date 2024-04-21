@@ -3,7 +3,7 @@ class PrototypesController < ApplicationController
   before_action :set_prototype, only: [:edit, :show, :update]
 
   def index
-    @prototype = Prototype.all
+    @prototype = Prototype.includes(:user)
   end
 
   def show
