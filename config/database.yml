@@ -55,4 +55,4 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  url: <%= ENV['PROTOSPACE_40353_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
